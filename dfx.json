@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "token": {
+      "type": "custom",
+      "candid": "src/main.did",
+      "wasm": "target/wasm32-unknown-unknown/debug/ic-token.wasm",
+      "build": "cargo build --target wasm32-unknown-unknown --package ic-token",
+      "dependencies": []
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  },
+  "dfx": "0.6.26",
+  "networks": {
+    "ic": {
+      "providers": [
+        "https://gw.dfinity.network"
+      ],
+      "type": "persistent"
+    },
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}

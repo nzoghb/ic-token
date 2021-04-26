@@ -1,0 +1,10 @@
+[package]
+name = "ic-token"
+version = "0.1.0"
+authors = ["nzoghb <nzoghb@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+ic-cdk = { git = "https://github.com/dfinity/cdk-rs", branch = "next" }
+ic-cdk-macros = { git = "https://github.com/dfinity/cdk-rs", branch = "next" }
+serde = "1.0.111"

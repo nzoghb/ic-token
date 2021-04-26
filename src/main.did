@@ -1,0 +1,5 @@
+service : {
+  "init": (text, nat8, text, nat64) -> ();
+  "name": () -> (text) query;
+  "symbol": () -> (text) query;
+}
